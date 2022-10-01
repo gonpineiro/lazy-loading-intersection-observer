@@ -13,7 +13,8 @@ const createImageNode = () => {
     const imagen = document.createElement('img');
     imagen.class = 'mx-auto'
     imagen.width = '320'
-    imagen.src = `https://randomfox.ca/images/${random()}.jpg`
+    //imagen.src = `https://randomfox.ca/images/${random()}.jpg`
+    imagen.dataset.src = `https://randomfox.ca/images/${random()}.jpg`
 
     /* Agregar la imagen dentro del contenedor */
     container.appendChild(imagen)
